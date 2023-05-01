@@ -4,9 +4,13 @@
   "https://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		
+		<typeAlias type="com.smrsys.smartfarm.domain.SFDisSenser" alias="SFDisSenser"/>
+		<typeAlias type="com.smrsys.smartfarm.domain.SFDisControl" alias="SFDisControl"/>
+		<typeAlias type="com.smrsys.smartfarm.domain.SFDisSetting" alias="SFDisSetting"/>
 	</typeAliases>
   <mappers>
-    <!-- <mapper resource="org/mybatis/example/BlogMapper.xml"/> -->
+    <mapper resource="com/smrsys/smartfarm/mybatis/SFDisSenserMapper.xml"/>
+    <mapper resource="com/smrsys/smartfarm/mybatis/SFDisControlMapper.xml"/>
+    <mapper resource="com/smrsys/smartfarm/mybatis/SFDisSettingMapper.xml"/>
   </mappers>
 </configuration>

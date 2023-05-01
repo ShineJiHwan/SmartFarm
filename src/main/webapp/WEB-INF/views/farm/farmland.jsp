@@ -39,7 +39,7 @@ const item ={
 	  ,methods:{
 		  clickEvent:function(no){
 			  alert(no+"번 농지 클릭");
-			  location.href="";
+			  location.href="/farm/monitoring";
 		  }
 	},created:function(){
 		

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="SFDisSetting">
+	<select id="selectAll" resultType="SFDisSetting">
+		select * from SF_Dis_Setting
+	</select>
+	
+	<update id="update" parameterType="SFDisSetting">
+		update SF_Dis_Setting set SET_SE_Sequence=#{SET_SE_Sequence}, SET_SE_Value=#{SET_SE_Value}
+		, SET_SE_Range=#{SET_SE_Range}, SET_CON_Sequence=#{SET_CON_Sequence},SET_CON_Value=#{SET_CON_Value}
+		where SET_Sequence =#{SET_Sequence}
+	</update>
+	
+</mapper>

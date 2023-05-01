@@ -8,11 +8,6 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/farm")
 public class FarmController {
 	
-	@GetMapping("/farmland")
-	public ModelAndView getIndex() {
-		return new ModelAndView("/farm/farmland");
-	}
-	
 	@GetMapping("/monitoring")
 	public ModelAndView getMonitoring() {
 		return new ModelAndView("/farm/monitoring");

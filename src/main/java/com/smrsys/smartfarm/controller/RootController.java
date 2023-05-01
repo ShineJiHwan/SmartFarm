@@ -9,6 +9,6 @@ public class RootController {
 	
 	@GetMapping("/")
 	public ModelAndView getIndex() {
-		return new ModelAndView("index");
+		return new ModelAndView("/farm/farmland");
 	}
 }
